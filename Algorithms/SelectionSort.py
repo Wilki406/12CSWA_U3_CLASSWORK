@@ -20,5 +20,10 @@ while True: # While state is True
         print(f" Unsorted: {elements}") # print unsorted elements
         print(f" Sorted: {selectionSort(elements)}") # print sorted elements
         break # stop the loop
-    else: # else accept values
+
+    elif userInput.isdigit(): # else accept values
         elements.append(int(userInput)) # append/add to the element list
+
+    else:
+        print("Please enter whole number or 'NEXT' to continue \n")
+        continue
